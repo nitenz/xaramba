@@ -1,0 +1,17 @@
+.menu-section{
+    width: 57%;
+    height: 100%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    .navbar{
+        top: 100px;
+        .nav-link{
+            &.active{
+                font-weight: bold;
+            }
+        } 
+    }
+}

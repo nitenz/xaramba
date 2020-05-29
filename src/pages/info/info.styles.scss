@@ -1,0 +1,19 @@
+.info-page{
+    text-align: left;
+    padding-left: 100px;
+    p{
+        font-size: 20px;
+    }
+    .info-page-text-section{
+        h1{
+            color: #8B0000;
+        }
+    }
+    .info-page-photos-section{
+        img{
+            width: 200px;
+            height: 200px;
+            padding-left: 20px;
+        }
+    }
+}

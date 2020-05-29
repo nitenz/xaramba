@@ -1,0 +1,29 @@
+.logo-section{
+    width: 43%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.logo-name{
+   width: 100%;     
+   text-align: center;
+   span{
+    color: #8B0000;
+   }
+}
+
+.logo-name > span:first-child{
+    font-size: 70px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.logo{
+  
+    img{
+        width: 160px;
+        height: 160px;
+    }
+}
