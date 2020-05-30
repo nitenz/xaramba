@@ -1,4 +1,12 @@
-.photo-containe{
-    width: 200px;
-    height: 200px;
+.photo-container{
+    padding-left: 20px;
+    float: left;
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    .zoom{
+        width: 300px;
+        height: 300px;
+    }
 }

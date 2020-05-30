@@ -1,6 +1,6 @@
 import React from 'react';
 import './logo.styles.scss';
-import mySvg from '../../images/xaramba.svg';
+import mySvg from '../../assets/xaramba.svg';
 
 const Logo = () => (
     <div className="logo-section">
