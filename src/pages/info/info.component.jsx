@@ -2,7 +2,7 @@ import React from 'react';
 import './info.styles.scss';
 
 import outside from '../../assets/exterior-0.jpg';
-import outside1 from '../../assets/exteriror-1.jpg';
+import outside1 from '../../assets/exterior-1.jpg';
 import inside from '../../assets/interior-0.jpg';
 import inside1 from '../../assets/interior-1.jpg';
 

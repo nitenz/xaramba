@@ -6,7 +6,7 @@ const Logo = () => (
     <div className="logo-section">
         <div className="logo-name">
             <span>Xaramba</span>
-            <span>pizza!!!</span>
+            <span>pizza</span>
         </div>
         <div className="logo">
             <img src={mySvg} alt="Logo" />

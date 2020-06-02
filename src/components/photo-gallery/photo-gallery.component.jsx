@@ -1,6 +1,8 @@
 import React from 'react';
 import './photo-gallery.styles.scss';
-import Photo from '../photo/photo.component';
+
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
 
 class PhotoGallery extends React.Component {
   constructor(props) {
@@ -19,41 +21,21 @@ class PhotoGallery extends React.Component {
     }
   }
 
-  handleClick( event ){
-    var ImgWithZoom = [];
-
-    if( this.state.zoomImage && event.currentTarget.className !== 'zoom' ){
-      ImgWithZoom = this.state.imageZoomed[0];
-      ImgWithZoom.className='';
-    }else if( this.state.zoomImage && event.currentTarget.className === 'zoom'){
-      event.currentTarget.className = '';
-      this.setState({zoomImage:false,imageZoomed: [] });
-    }else{
-      const  aux = [];
-      aux.push( event.currentTarget ); 
-      event.currentTarget.className = 'zoom';
-      this.setState({zoomImage:true,imageZoomed: aux });
-    }
-  }
-
   render(){
     var items = [],
-    that = this,
     i = 0;
 
     this.state.photoList.forEach(function( item ){
-      if( item.type === 'food'){
-        item.photos.forEach(function( food ){
-          items.push( <Photo key={i} src={food.src} alt={food.alt} handleClick={that.handleClick.bind(that)}/> )
-          i++;
-        })
-      }
+      item.photos.forEach(function( food ){
+        items.push( <div key={i} data-src={require('../../assets/'+food.src+'.jpg')}></div> )
+        i++;
+      })
     })
     
     return (
-      <div className="photo-gallery">
-        { items }
-      </div>
+      <AwesomeSlider>
+         { items }
+      </AwesomeSlider>
     );
   }
 } 

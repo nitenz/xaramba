@@ -12,12 +12,13 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      activeMenuOption: 'home'
+      activeMenuOption: 'info'
     };
   }
 
   handleClick( event ){
-    this.setState({activeMenuOption: event.currentTarget.text.toLowerCase()});
+    document.getElementsByClassName("active")[0].classList.remove('active');
+    this.setState({activeMenuOption: event.currentTarget.hash.replace('#', '').toLowerCase() });
   }
 
   render(){

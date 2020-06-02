@@ -1,5 +1,10 @@
 .photos-page{
-    width: 100%;
+    width: 50%;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.awssld__content > img, 
+.awssld__content > video{
+    object-fit: contain !important;
 }
